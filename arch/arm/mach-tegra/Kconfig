@@ -271,15 +271,6 @@ config TEGRA_EMC_SCALING_ENABLE
 	depends on TEGRA_SILICON_PLATFORM
 	default n
 
-<<<<<<< HEAD
-=======
-config VOLTAGE_CONTROL
-	bool "Enable user voltage control on Tegra CPU"
-	depends on TEGRA_SILICON_PLATFORM
-	default n
-	help
-	User custom voltage control interface
-
 config GPU_OVERCLOCK
 	bool "Enable GPU overclock for Tegra3"
 	depends on TEGRA_SILICON_PLATFORM
@@ -289,9 +280,6 @@ config GPU_OVERCLOCK
 	If Off, clock speed is 416MHz.
 	If On, GPU clock speed can be selected.
 
-<<<<<<< HEAD
->>>>>>> 452d71b... tegra3  dvfs/clock tweaks
-=======
 choice
 
 	depends on GPU_OVERCLOCK
@@ -310,8 +298,7 @@ choice
 		bool "520 MHz"
 
 endchoice
-	  
->>>>>>> f93453f... CPU OC to 1.624GHz - higher end CPU frequencies are now at 1408, 1504,
+
 config TEGRA_CPU_DVFS
 	bool "Enable voltage scaling on Tegra CPU"
 	depends on TEGRA_SILICON_PLATFORM
